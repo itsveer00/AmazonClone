@@ -35,21 +35,3 @@ const Router = () => {
   );
 };
 export default Router;
-
-// const Root = createStackNavigator();
-
-// const Router = () => {
-//   return (
-//     <NavigationContainer>
-//      <Root.Navigator screenOptions={{headerShown: false}}>
-//       <Root.Screen component={BottomTabNav} name="HomeTabs" />
-//      </Root.Navigator>
-//     </NavigationContainer>
-//   )
-// }
-
-// export default Router
-
-// const styles = StyleSheet.create({
-
-// })
