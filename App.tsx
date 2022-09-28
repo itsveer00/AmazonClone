@@ -11,6 +11,8 @@ import ImageCarousel from './src/components/ImageCarousel';
 import AddressScreen from './src/screens/AddressScreen';
 import Router from './src/router';
 import ProductItem from './src/components/ProductItem';
+import LoginScreen from './src/screens/LoginScreen/index';
+import SignUpScreen from './src/screens/SignUpScreen';
 // import SearchBar from './src/screens/SearchBar';
 
 export default function App() {
@@ -22,12 +24,14 @@ export default function App() {
   // </SafeAreaView>
 
     <View style={styles.container}>
+      {/* <LoginScreen /> */}
+      <SignUpScreen />
       {/* <SearchBar /> */}
       {/* <HomeScreen /> //working// */}
       {/* <ProductScreen /> //working// */}
       {/* <ShoppingCartScreen /> //working//  */}
       {/* <AddressScreen />   //working// */}
-      <Router />
+      {/* <Router />  isko chalana h jab login pe wor nahi karna tab */}
       {/* <ImageCarousel /> //working// */}
       {/* <CartProductItem /> //working// */}
       {/* <StatusBar style="auto" /> */}

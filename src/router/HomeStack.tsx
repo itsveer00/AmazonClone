@@ -21,7 +21,7 @@ const HeaderComponent = ({searchValue, setSearchValue: HeaderComponentProps}) =>
        flexDirection: 'row', 
        alignItems: 'center'
       }}>
-        <Feather  name="search" size={20}/>
+        {/* <Feather  name="search" size={20}/> */}
         <TextInput
           style={{ height: 40, marginLeft: 10}}
           placeholder="Search.." />
