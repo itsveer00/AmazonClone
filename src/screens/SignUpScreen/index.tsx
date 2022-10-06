@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, ScrollView } from 'react-native'
 import React, { useState } from 'react'
 import Checkbox from 'expo-checkbox'
 import Button from '../../components/Button';
@@ -26,7 +26,7 @@ const SignUpScreen = () => {
     //     }
     // }
   return (
-    <View style={styles.mainContainer}>
+    <ScrollView style={styles.mainContainer}>
             <Text style={styles.mainHeader}>SignUp Page</Text>
             <Text style={styles.description}>Create New Account</Text>
             <View style={styles.inputContainer}>
@@ -67,10 +67,10 @@ const SignUpScreen = () => {
             </TouchableOpacity> */}
             <View style={styles.wrapper}>
                 {/* <Text style={styles.wrapperText}>Already have an account<a style={styles.wrapperLogin}>Click here</a></Text> */}
-                <Text style={styles.wrapperText}>Already have an account<TouchableOpacity style={styles.wrapperLogin}>Click here</TouchableOpacity></Text>
+                <Text style={styles.wrapperText}>Already have an account<TouchableOpacity style={styles.wrapperLogin } >Click here</TouchableOpacity></Text>
             </View>
             </View>
-        </View>
+        </ScrollView>
   )
 }
 

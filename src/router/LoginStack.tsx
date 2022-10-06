@@ -7,6 +7,8 @@ import HomeScreen from '../screens/HomeScreen';
 import ProductScreen from '../screens/ProductScreen';
 import ShoppingCartScreen from '../screens/ShoppingCartScreen';
 import AddressScreen from '../screens/AddressScreen';
+import LoginScreen from '../screens/LoginScreen';
+import SignUpScreen from '../screens/SignUpScreen';
 
 const Stack = createStackNavigator();
 
@@ -14,12 +16,12 @@ const HomeStack = () => {
   return (
     <Stack.Navigator screenOptions={{title: 'Aligned Center', headerTitleAlign: 'center'}}>
       <Stack.Screen
-       component={ShoppingCartScreen} name="cart"
-       options={{title: 'Shopping Cart'}} />
+       component={LoginScreen} name="login"
+       options={{title: 'Loginnn'}}  />
       <Stack.Screen 
-       component={AddressScreen}
-       name="Address"
-       options={{title: 'Address'}} />
+       component={SignUpScreen}
+       name="Signup"
+       options={{title: 'Signup'}} />
     </Stack.Navigator>
   )
 }

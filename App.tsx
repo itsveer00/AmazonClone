@@ -25,13 +25,13 @@ export default function App() {
 
     <View style={styles.container}>
       {/* <LoginScreen /> */}
-      <SignUpScreen />
+      {/* <SignUpScreen /> */}
       {/* <SearchBar /> */}
       {/* <HomeScreen /> //working// */}
       {/* <ProductScreen /> //working// */}
       {/* <ShoppingCartScreen /> //working//  */}
       {/* <AddressScreen />   //working// */}
-      {/* <Router />  isko chalana h jab login pe wor nahi karna tab */}
+      <Router />
       {/* <ImageCarousel /> //working// */}
       {/* <CartProductItem /> //working// */}
       {/* <StatusBar style="auto" /> */}

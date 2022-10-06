@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, useColorScheme, SafeAreaView, StatusBar, Image, FlatList } from 'react-native';
+import { StyleSheet, Text, View, useColorScheme, SafeAreaView, StatusBar, Image, FlatList, ScrollView } from 'react-native';
 import ProductItem from '../../components/ProductItem';
 import CartProductItem from '../../components/CartProductItem';
 import products from '../../data/cart';
@@ -19,7 +19,7 @@ const ShoppingCartScreen = () => {
         navigation.navigate('Address');
     }
     return (
-        <View style={styles.page}>
+        <ScrollView style={styles.page}>
             <FlatList
                 data={products}
                 renderItem={({ item }) => <CartProductItem cartItem={item} />}
@@ -40,7 +40,7 @@ const ShoppingCartScreen = () => {
                     </View>
                 )}
             />
-        </View>
+        </ScrollView>
     );
 }
 

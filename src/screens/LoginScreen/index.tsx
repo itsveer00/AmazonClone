@@ -1,8 +1,10 @@
-import { Alert, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
+import { Alert, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import React, { useState } from 'react'
 import Checkbox from 'expo-checkbox'
+import { useNavigation } from '@react-navigation/native';
 
 const LoginScreen = () => {
+    const navigation = useNavigation();
     const [agree, setAgree] = useState(false);
     const [userName, setUserName] = useState("");
     const [password, setPassword] = useState("");
@@ -18,6 +20,9 @@ const LoginScreen = () => {
             console.warn('incorrect id or password');
         }
         return Alert.alert(userName, password);
+    }
+    const onSignUp = () => {
+        navigation.navigate('Signup');
     }
 
     return (
@@ -46,7 +51,7 @@ const LoginScreen = () => {
         //         // secureTextEntry
         //     />
         // </View>
-        <View style={styles.mainContainer}>
+        <ScrollView style={styles.mainContainer}>
             <Text style={styles.mainHeader}>Login Page</Text>
             <Text style={styles.description}>Sign in</Text>
             <View style={styles.inputContainer}>
@@ -85,10 +90,10 @@ const LoginScreen = () => {
                 <Text style={styles.signupContainerLabel} >New user</Text>
                 <TouchableOpacity
                 style={ styles.signupButtonStyle }>
-                <Text style={styles.buttonText}>Signup here</Text>
+                <Text style={styles.buttonText} onPress={onSignUp}>Signup here</Text>
             </TouchableOpacity>
             </View>
-        </View>
+        </ScrollView>
     )
 }
 
